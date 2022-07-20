@@ -1,0 +1,134 @@
+html, body {
+	height: 100%;
+}
+#app, .main-wrapper {
+	height: 100%;
+}
+/* Generic */
+.clear {
+	clear: both;
+}
+.logo-img {
+	height: 32px;
+	vertical-align: middle
+}
+.logo-img.linkedin {
+	height: 32px;
+}
+body {
+	margin: 0;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+}
+a {
+	color: #4457ff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.outer-wrapper {
+	padding: 15px;
+	padding-bottom: 60px;
+	position: relative;
+	box-sizing: border-box;
+}
+.inner-wrapper {
+	width: 840px;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 0.3em;
+}
+h2 {
+	margin-bottom: 0.3em;
+}
+p {
+	margin: 0.5em 0;
+}
+/* Layout  */
+#nav {
+	padding: 20px 30px;
+	width: 100%;
+	box-sizing: border-box;
+	font-weight: bold;
+	color: #2c3e50;
+	border-bottom: 1px solid #f1f1f1;
+	background-color: #fcfcfc;
+}
+#nav .links {
+	float: right;
+	line-height: 25px;
+}
+#nav .links * {
+	vertical-align: middle;
+}
+#nav .site-title{
+	float: left;
+	text-decoration: none;
+	color: #2c3e50;
+	font-size: 25px;
+}
+
+#nav .links a {
+	color: inherit;
+  margin-right: 5px;
+}
+
+#nav .links a.nuxt-link-exact-active {
+	color: #4457ff;
+}
+
+.back-to-top {
+	width: 25px;
+	height: 25px;
+
+	margin: 0 auto;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	cursor: pointer;
+
+	border: solid #bfbfbf;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: translate(-50%) rotate(-135deg);
+	-webkit-transform: translate(-50%) rotate(-135deg);
+	
+	animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: translate(-50%) rotate(-135deg) scale(1);
+		-webkit-transform: translate(-50%) rotate(-135deg) scale(1);
+	}
+	10% {
+		transform: translate(-50%) rotate(-135deg) scale(1.2);
+		-webkit-transform: translate(-50%) rotate(-135deg) scale(1.2);
+	}
+	20% {
+		transform: translate(-50%) rotate(-135deg) scale(1);
+		-webkit-transform: translate(-50%) rotate(-135deg) scale(1);
+	}
+}
+@media screen and (max-width: 530px) {
+	#nav {
+		text-align: left;
+	}
+	#nav .site-title {
+		display: block;
+		float: none;
+	}
+	#nav .links {
+		float: none;
+		display: block;
+	}
+}

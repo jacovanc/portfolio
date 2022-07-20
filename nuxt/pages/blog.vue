@@ -1,8 +1,6 @@
 <template>
   <div>
     <NuxtLink to="/">Home</NuxtLink>
-    Test
-	{{pageData}}
   </div>
 </template>
 
@@ -14,8 +12,13 @@ export default {
       pageData: null,
     };
   },
-  async fetch() {
+  async fetch() { // Fetch used to pre-render data before build
     this.pageData = await this.$axios.$get("/items/Homepage");
+  },
+  methods: {
+    async fetchNewData() {
+      console.log("hit");
+    }
   },
 };
 </script>
