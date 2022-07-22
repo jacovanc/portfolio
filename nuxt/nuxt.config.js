@@ -19,6 +19,8 @@ export default {
     ]
   },
 
+  generate: { fallback: '404.html' },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['@/assets/css/global.css'],
 
@@ -37,6 +39,7 @@ export default {
   modules: [
 	'@nuxtjs/axios'
   ],
+  
   axios: {
     baseURL: 'http://localhost:8055/', // Used as fallback if no runtime config is provided
   },
@@ -52,5 +55,5 @@ export default {
   publicRuntimeConfig: {
     API_BASE_URL: process.env.API_BASE_URL || 'http://localhost:8055'
   },
-  
+
 }
