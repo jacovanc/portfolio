@@ -17,9 +17,6 @@
 				required: true
 			}
 		},
-		created() {
-			console.log(this.BlogPost.link);
-		}
 	}
 </script>
 

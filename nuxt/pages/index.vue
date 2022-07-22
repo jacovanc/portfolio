@@ -2,7 +2,7 @@
 	<div class="inner-wrapper about" v-if="pageData">
 		<h1>{{ pageData.data.title }}</h1>
 		<div class="profile-img-container">
-			<img class="profile-img" :src="this.$config.API_BASE_URL + '/assets/' + pageData.data.main_image" alt="This is a picture of me - please don't spend too much time looking at it.">
+			<img class="profile-img" :src="$config.API_BASE_URL + '/assets/' + pageData.data.main_image" alt="This is a picture of me - please don't spend too much time looking at it.">
 		</div>
 		<div class="main_content" v-html="pageData.data.main_content">{{ pageData.data.main_content }}</div>
 	</div>
